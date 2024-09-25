@@ -106,7 +106,8 @@ h2 {
 .pictures-homepage {
     margin: 0 auto;
     text-align: center;
-    padding: 2px;
+    padding: 3px;
+    width: 90%;
   }
   
   strong {
@@ -114,7 +115,7 @@ h2 {
   }
   
   .pictures-homepage a {
-    width: 17%;
+    width: 18%;
   }
 
   .learnmore-info {
