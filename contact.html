@@ -11,13 +11,13 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html">
+                <a href="home.html">
                     <img src="images/LogoNew.png" alt="Paradigm Pet Professionals Logo" />
                 </a>
             </div>
             
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="dog-owners.html">Dog Owners</a></li>
                 <li><a href="cat-owners.html">Cat Owners</a></li>
                 <li><a href="bird-owners.html">Bird Owners</a></li>
@@ -33,6 +33,10 @@
         </nav>
     </header>
 
+    <p class="breadcrums">
+        <a href="home.html" style="color: black;">Home</a> / <a href="contact.html">Contact Us</a>
+      </p>
+
     <section class="content">
         <h1>Request a Virtual Consultation</h1>
         <form action="#" method="POST" class="consultation-form">
@@ -45,6 +49,12 @@
             <label for="consultation-user-phone">Your Phone Number:</label>
             <input type="tel" id="consultation-user-phone" name="consultation-user-phone" required><br><br>
 
+            <label for="consultation-user-pet-name">Pet's Name:</label>
+            <input type="text" id="consultation-user-pet-name" name="consultation-user-pet-name" required><br><br>
+
+            <label for="consultation-user-pet-age">Pet's Age:</label>
+            <input type="number" id="consultation-user-pet-age" name="consultation-user-pet-age" required><br><br>
+
             <label for="consultation-user-pet-type">Pet Type:</label>
             <select id="consultation-user-pet-type" name="consultation-user-pet-type">
                 <option value="dog">Dog</option>
@@ -52,6 +62,20 @@
                 <option value="bird">Bird</option>
                 <option value="other">Other</option>
             </select><br><br>
+
+            <label for="consultation-user-timezone">Time Zone:</label>
+            <select id="consultation-user-timezone" name="consultation-user-timezone" required>
+                <option value="PST">Pacific Standard Time (PST)</option>
+                <option value="MST">Mountain Standard Time (MST)</option>
+                <option value="CST">Central Standard Time (CST)</option>
+                <option value="EST">Eastern Standard Time (EST)</option>
+                <option value="GMT">Greenwich Mean Time (GMT)</option>
+                <option value="other">Other</option>
+                </select><br><br>
+                <label for="manualTimezone">If Other, please enter your time zone:</label>
+                <input type="text" id="manualTimezone" name="manualTimezone"><br><br>
+
+            
 
             <label for="consultation-user-message">Message:</label><br>
             <textarea id="consultation-user-message" name="consultation-user-message"></textarea><br><br>
